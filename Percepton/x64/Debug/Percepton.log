@@ -1,0 +1,15 @@
+﻿  Percepton.cpp
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\Percepton.cpp(12,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\Percepton.cpp(16,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\NodeMap.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\Utils.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\NodeMap.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\NodeMap.h(37,23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\NodeMap.h(58,21): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\NodeMap.h(80,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\NodeMap.h(84,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\Percepton.cpp(17,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\Percepton.cpp(18,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\Percepton.cpp(46,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Programming\Repositories\Non-Multilayered-Perceptron\Percepton\NodeMap.h(70): warning C4715: 'PerceptronMap::addCorrectnessCounter': not all control paths return a value
+  Percepton.vcxproj -> E:\Programming\Repositories\Non-Multilayered-Perceptron\x64\Debug\Percepton.exe

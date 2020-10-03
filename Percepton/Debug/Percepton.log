@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  Percepton.cpp
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(12): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(14): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(15): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(128): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(144): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(152): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(166): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\ifyournotsimonleave\desktop\2020 work\neural networks\percepton\percepton\percepton\percepton.cpp(175): warning C4101: 'test': unreferenced local variable
+  Percepton.vcxproj -> C:\Users\Ifyournotsimonleave\Desktop\2020 Work\Neural Networks\Percepton\Percepton\Debug\Percepton.exe
