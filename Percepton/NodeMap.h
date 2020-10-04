@@ -6,15 +6,15 @@
 class PerceptronMap {
 
 	public: 
-		float weights[3];
-		int input[2];
-		int check = 0, tries = 0, output = 0, wrong = 0, right = 0, error = 0;
-		float percent = 100;
-		double bias;
+		float weights[3], input[2];
+		float percent = 100, bias, error; 
 
-		PerceptronMap(int sBias) {
+		int check = 0, tries = 0, output = 0, wrong = 0, right = 0;
+
+		PerceptronMap(double sBias) {
 			bias = sBias;
 			getRandW();
+			setRandInput();
 		}
 
 		float setPercentage(int tries);
@@ -25,7 +25,7 @@ class PerceptronMap {
 		void updateAllWeights();
 		void printResults();
 		void getRandW();
-		void setRandInput(int step);
+		void setRandInput();
 };
 
 //Select random weights
@@ -34,17 +34,15 @@ void PerceptronMap::getRandW() {
 	int i = 0;
 
 	for (i = 0; i < 3; i++) {
-		weights[i] = rand() % 10;
+		weights[i] = ((float)rand() / (RAND_MAX)) + 10;
 	}
 }
 
-void PerceptronMap::setRandInput(int step) {
+void PerceptronMap::setRandInput() {
 
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 2; i++) {
 		
-		if (step < 2) {
-			input[step] = rand() % 2;
-		}
+		input[i] = ((float)rand() / (RAND_MAX));
 
 	}
 
@@ -87,9 +85,13 @@ void PerceptronMap::updateAllWeights() {
 
 void PerceptronMap::printResults() {
 
-	std::cout << "Input1: " << input[0] << " Input2: " << input[1] << std::endl;
-	std::cout << "Output: " << output << std::endl;
-	std::cout << "Wrong: " << wrong << " Right: " << right << std::endl;
-	std::cout << "Percent Wrong: " << percent << std::endl << std::endl;
+	std::cout << "###Outputs###" << std::endl << "Input1: " << input[0] << " Input2: " << input[1] << std::endl
+		<< "Output: " << output << std::endl;
+
+	std::cout << "###Wrong/Right %###" << std::endl << "Wrong: " << wrong << std::endl << " Right: " << right << std::endl
+		<< "Percent Wrong: " << percent << std::endl;
+
+	std::cout << "###Weights###" << std::endl << "Weights1: " << weights[0] << std::endl
+		<< "Weights2: " << weights[1] << std::endl << "Weights3: " << weights[2] << "Error: " << error << std::endl << std::endl;
 
 }

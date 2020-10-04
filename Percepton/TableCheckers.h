@@ -1,48 +1,51 @@
 #pragma once
 
-int table[4][2] = {
-	{0, 0},
-	{0, 1},
-	{1, 0},
-	{1, 1}
-};
-
 //Check each run
-int checkStepORTable(int input[], int outputL, int check) {
+int checkStepTable(int desiredOuptut, int outputL, int check) {
 
-	int inclusiveOr[4] = { 0, 1, 1, 1 };
+	if (outputL != desiredOuptut) {
+		return check = false;
+	}
+	else {
+		return check = true;
+	}
 
-	check = 0;
+}
 
-	for (int i = 0; i < 4; i++) {
+int getDesiredOutput(float inputs[], int orTable) {
 
-		if (input[0] == table[i][0] && input[1] == table[i][1]) {
+	float reinterpretInput[2];
 
-			if (outputL == inclusiveOr[i]) {
+	for (int i = 0; i < 2; i++) {
 
-				check = 1;
-				break;
-			}
+		reinterpretInput[i] = round(inputs[i]);
 
+	}
+
+	if (orTable) {
+
+		if (reinterpretInput[0] == 1 || reinterpretInput[1] == 1) {
+			return 1;
+		}
+		else if(reinterpretInput[0] == 0 && reinterpretInput[1] == 0){
+			return 0;
+		}
+
+	}
+	else {
+
+		if (reinterpretInput[0] == 1 && reinterpretInput[1] == 1) {
+			return 1;
+		}
+		else if (reinterpretInput[0] == 0 || reinterpretInput[1] == 0) {
+			return 0;
 		}
 
 	}
 
-	return check;
 }
 
-int getDesiredOROutput(int inputs[]) {
-
-	if (inputs[0] == 1 || inputs[1] == 1) {
-		return 1;
-	}
-	else {
-		return 0;
-	}
-
-}
-
-int returnProperInput(float output) {
+int returnProperOutput(float output) {
 	if (output > 0) {
 		return 1;
 	}
